@@ -1182,4 +1182,15 @@ footer .wave#wave4
        
        
    }
+   .teams .carousel .card{
+    /* border: 3px solid #007FFF;
+    height: 550px;
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease; */
+    border: 3px solid red;
+}
 }
