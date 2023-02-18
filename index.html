@@ -10,8 +10,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="node_modules/github-calendar/dist/github-calendar.min.js"></script>
+    <script src="node_modules/github-readme-stats/dist/github-readme-stats.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.rawgit.com/nizarmah/calendar-javascript-lib/master/calendarorganizer.min.css" rel="stylesheet" />
     <title>Sumit_ss Portfolio</title>
 </head>
 <body>
@@ -86,6 +90,7 @@
             </div>
         </div>
     </section>
+    
 
 
 
@@ -188,8 +193,8 @@
                         <p>MongoDB</p>
                     </div>
                     <div>
-                        <img src="https://chiranjeev-thapliyal.vercel.app/svg/material-ui.svg" alt="">
-                        <p>Material UI</p>
+                        <img src="https://pbs.twimg.com/profile_images/1244925541448286208/rzylUjaf_400x400.jpg" alt="">
+                        <p>Chakra UI</p>
                     </div>
                     <div>
                         <img src="https://chiranjeev-thapliyal.vercel.app/svg/git.svg" alt="">
@@ -199,24 +204,34 @@
 
                 </div>
                 <div  class="github_record">
-                    <img src="./Resources/github.jpg" alt="github" >
+                    <h4 class="title">Github Calendar</h4>
+                    <div id="github-calendar" ></div>
+                    <div id="github-stats"></div>
+
                 </div>
             </div>
         </div>
     </section> 
 
     <!-- project section start -->
-    <section class="teams" id="teams">
-        <div class="max-width">
-            <h2 class="title">My Projects</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <div class="box">
-                        <img src="https://raw.githubusercontent.com/KKShakya/wakeHealthy/master/src/Images/Logo.png" alt="img">
-                        <div class="text">Wake Healthy</div>
+    
+     
+    
+    <section class="project_section">
+           <div class="project_container">
+                  <h2 class="title">My Projects</h2>
+                  <div class="project_card_con">
+                    
+                    <div class="project_card">
+                        <div class="pro_img">
+                            <img src="https://raw.githubusercontent.com/KKShakya/wakeHealthy/master/src/Images/Logo.png" alt="img">
+                        </div>
+                        <div class="pro_desp">
+                            <div class="text">Wake Healthy</div>
                         <p class="desp">A fitness movement that is worth
                             breakign a sweat for </p>
-                        <div>
+                        </div>
+                        <div class="pro_button">
                             <a href="https://wakehealthy.netlify.app/" class="project" target="_blank">View Project</a>
                             <a href="https://github.com/KKShakya/wakeHealthy" class="project" target="_blank">Git Hub</a>
                         </div>
@@ -237,18 +252,18 @@
                                  <i class="fa-brands fa-css3"></i>
                                 <p>CSS</p>
                             </div>
-                            
-                            
                         </div>
-                       
                     </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="https://logos-world.net/wp-content/uploads/2021/11/ZEE5-Emblem.png" alt="img">
-                        <div class="text">zee5</div>
+                   
+                    <div class="project_card">
+                        <div class="pro_img">
+                            <img src="https://logos-world.net/wp-content/uploads/2021/11/ZEE5-Emblem.png" alt="img">
+                        </div>
+                        <div class="pro_desp">
+                            <div class="text">Zee5</div>
                         <p class="desp">ZEE5 is an Indian subscription video-on-demand and over-the-top streaming service, run by Zee Entertainment Enterprises. </p>
-                        <div>
+                        </div>
+                        <div class="pro_button">
                             <a href="https://superlative-cocada-37c4b9.netlify.app/" class="project" target="_blank">View Project</a>
                             <a href="https://github.com/sumitss085/shivering-need-4074" target="_blank" class="project">Git Hub</a>
                         </div>
@@ -269,18 +284,18 @@
                                  <i class="fa-brands fa-css3"></i>
                                 <p>CSS</p>
                             </div>
-                            
-                            
                         </div>
                     </div>
-                </div>
-               
-                <div class="card">
-                    <div class="box">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Meesho_Logo_Full.png/480px-Meesho_Logo_Full.png" alt="img">
-                        <div class="text">Meesho</div>
-                        <p class="desp">Meesho is an online Shopping & Reselling site in India - Buy & Sell best quality Fashion, Electronics, Home & Kitchen products at lowest prices.</p>
-                        <div>
+                    
+                    <div class="project_card">
+                        <div class="pro_img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Meesho_Logo_Full.png/480px-Meesho_Logo_Full.png" alt="img">
+                        </div>
+                        <div class="pro_desp">
+                            <div class="text">Weeso</div>
+                        <p class="desp">Weesho is an online Shopping & Reselling site in India - Buy & Sell best quality Fashion, Electronics, Home & Kitchen products at lowest prices. </p>
+                        </div>
+                        <div class="pro_button">
                             <a href="https://fasion-hub-store.vercel.app/" class="project" target="_blank">View Project</a>
                             <a href="https://github.com/sumitss085/FashionHub_store" class="project" target="_blank">Git Hub</a>
                         </div>
@@ -301,14 +316,11 @@
                                  <i class="fa-brands fa-css3"></i>
                                 <p>CSS</p>
                             </div>
-                            
-                            
                         </div>
                     </div>
-                </div>
-                
-            </div>
-        </div>
+                    
+                  </div>
+           </div>
     </section>
 
     <!-- contact section start -->
@@ -435,4 +447,30 @@
       window.addEventListener("load", function(){
          loader.style.display = "none";
       })
+
+
+      GitHubCalendar("#github-calendar", "sumitss085");
+
+      GitHubCalendar("#github-calendar", "sumitss085", {
+                    global_stats: false,
+                    responsive: true,
+                    tooltips: false,
+                    theme: "default",
+                    years: 1,
+                    summary_text: "Contributions in the last year",
+                    language: "en",
+       });
+
+       GitHubStats("#github-stats", "sumitss085");
+            GitHubStats("#github-stats", "sumitss085", {
+        show_icons: true,
+        hide_border: true,
+        theme: "radical",
+        custom_title: "My GitHub Stats",
+        include_all_commits: true,
+        count_private: true,
+        });
+
   </script>
+ 
+

@@ -468,6 +468,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,90,121,1) 0%, rgba(
 .techstackheading .title::after{
     content: "Tech -Stack";
 }
+.github_record .title::after{
+    content: "Github Commit";
+}
 .github_record{
     width: 100%;
     margin: auto;
@@ -479,35 +482,35 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,90,121,1) 0%, rgba(
     height: 100%;
 }
 /* projects section styling */
-.teams .title::after{
+.project_section{
+    width: 100%;
+    height: auto;
+    
+    background: linear-gradient(to left, rgba(231, 235, 219, 0.8), rgba(87, 232, 225, 0.8));
+}
+.project_container .title::after{
     content: "Projects Done";
 }
-.teams .carousel .card{
-    border: 3px solid #007FFF;
-    height: 550px;
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
- .teams .carousel .card .box{
+.project_card_con{
+    width: 100%;
+    height: 600px;
+   
+    padding: 15px;
     display: flex;
-    flex-direction: column;
-    ;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
+    margin: auto;
 }
-
-.teams .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
+.project_card{
+      width: 26%;
+      height: auto;
+      border: 2px solid teal;
+      background: #222;
+     margin: auto;
+     text-align: center;
+     padding: 20px 10px;
 }
-.teams .carousel .card img{
+.pro_img img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -515,35 +518,23 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,90,121,1) 0%, rgba(
     border: 5px solid #007FFF;
     transition: all 0.3s ease;
 }
-.desp{
-    height: 120px;
-  
-}
-.teams .carousel .card:hover img{
+.pro_img:hover img{
     border-color: #fff;
 }
-.owl-dots{
+.pro_desp .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: white;
+}
+.pro_desp .desp{
+    height: 130px;
+    padding: 10px;
+    color: white;
     text-align: center;
-    margin-top: 20px;
+  
 }
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid #72A0C1!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: #72A0C1!important;
-}
-.teams .carousel .card .box .project
+.pro_button .project
 {
     display: inline-block;
     color: #72A0C1;
@@ -552,11 +543,12 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,90,121,1) 0%, rgba(
     border-radius: 6px;
     padding: 8px 10px;
     margin-top: 20px;
+    margin-left: 20px;
     
     border: 2px solid #72A0C1;
     transition: 0.3s ease-in-out;
 }
-.teams .carousel .card .box .project:hover{
+.pro_button .project:hover{
     color: black;
     background: #72A0C1;
 }
@@ -570,15 +562,18 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,90,121,1) 0%, rgba(
     
 }
 .pro_tect_stack div{
-    color: #0066b2;
-    font-size: 30px;
+    color: whitesmoke;
+    font-size: 35px;
     margin: auto;
     padding: 5px;
   
 }
 .pro_tect_stack div>p{
-    font-size: 10px;
+    font-size: 14px;
 }
+
+
+
 /* c
 /* contact section styling */
 input,textarea
@@ -934,6 +929,14 @@ footer .wave#wave4
         font-size: 40px;
         line-height: 50px;
     }
+    .project_card{
+        width: 30%;
+        
+  }
+  .pro_desp .desp{
+    height: 140px;
+ 
+   }
 }
 
 @media (max-width: 991px) {
@@ -946,6 +949,28 @@ footer .wave#wave4
         font-weight: 600;
         cursor: pointer;
     }
+    .project_card{
+        width: 30%;
+        
+  }
+  .pro_desp .desp{
+    height: 140px;
+ 
+   }
+   .pro_button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pro_button .project
+{
+    
+    font-size: 15px;
+    padding: 8px 8px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
 }
 @media (max-width: 947px){
    
@@ -1042,6 +1067,43 @@ footer .wave#wave4
         margin-top:10px;
         margin-bottom:15px
     }
+    .project_card{
+        width: 30%;
+        
+  }
+  .pro_desp .desp{
+    height: 120px;
+     font-size: 12px;
+   }
+   .pro_tect_stack div{
+    color: whitesmoke;
+    font-size: 20px;
+    margin: auto;
+    padding: 5px;
+  
+}
+.pro_tect_stack div>p{
+    font-size: 10px;
+}
+.pro_button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pro_button .project
+{
+    display: inline-block;
+    color: #72A0C1;
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 8px 8px;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+    border: 2px solid #72A0C1;
+    transition: 0.3s ease-in-out;
+}
 }
 
 @media (max-width: 690px) {
@@ -1099,6 +1161,72 @@ footer .wave#wave4
         margin-top:10px;
         margin-bottom:15px
     }
+    .project_card_con{
+      display: inline-block;
+    }
+
+    .project_card{
+        width: 70%;
+        height: auto;
+        border: 2px solid teal;
+        background: #222;
+       margin: auto;
+       margin-top: 15px;
+       text-align: center;
+       padding: 20px 10px;
+  }
+  
+ 
+ 
+  .pro_desp .desp{
+      height: 130px;
+      padding: 10px;
+      color: white;
+      text-align: center;
+      font-size: 17px;
+    
+  }
+  .pro_button .project
+  {
+      display: inline-block;
+      color: #72A0C1;
+      font-size: 15px;
+      font-weight: 500;
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-top: 20px;
+      margin-left: 20px;
+      
+      border: 2px solid #72A0C1;
+      transition: 0.3s ease-in-out;
+  }
+  .pro_button .project:hover{
+      color: black;
+      background: #72A0C1;
+  }
+  .pro_tect_stack{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+      margin-top: 20px;
+      
+  }
+  .pro_tect_stack div{
+      color: whitesmoke;
+      font-size: 35px;
+      margin: auto;
+      padding: 5px;
+    
+  }
+  .pro_tect_stack div>p{
+      font-size: 14px;
+  }
+  
+    
+
+
 }
 
 @media (max-width: 500px) {
@@ -1182,15 +1310,39 @@ footer .wave#wave4
        
        
    }
-   .teams .carousel .card{
-    /* border: 3px solid #007FFF;
-    height: 550px;
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
+
+   .pro_desp .desp{
+    height: 130px;
+    padding: 10px;
+    color: white;
     text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease; */
-    border: 3px solid red;
+    font-size: 12px;
+  
 }
+.pro_button .project
+  {
+      display: inline-block;
+      color: #72A0C1;
+      font-size: 10px;
+      font-weight: 500;
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-top: 20px;
+      margin-left: 20px;
+      
+      border: 2px solid #72A0C1;
+      transition: 0.3s ease-in-out;
+  }
+  .pro_tect_stack div{
+    
+    font-size: 25px;
+    margin: auto;
+    padding: 5px;
+  
 }
+.pro_tect_stack div>p{
+    font-size: 10px;
+}
+
+}
+
