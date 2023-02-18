@@ -10,8 +10,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="node_modules/github-calendar/dist/github-calendar.min.js"></script>
-    <script src="node_modules/github-readme-stats/dist/github-readme-stats.min.js"></script>
+    <!-- <script src="node_modules/github-calendar/dist/github-calendar.min.js"></script> -->
+    <!-- <script src="node_modules/github-readme-stats/dist/github-readme-stats.min.js"></script> -->
+    <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -207,6 +214,9 @@
                     <h4 class="title">Github Calendar</h4>
                     <div id="github-calendar" ></div>
                     <div id="github-stats"></div>
+                    <div class="calendar">
+                        
+                    </div>
 
                 </div>
             </div>
@@ -449,27 +459,42 @@
       })
 
 
-      GitHubCalendar("#github-calendar", "sumitss085");
+    //   GitHubCalendar("#github-calendar", "sumitss085");
 
-      GitHubCalendar("#github-calendar", "sumitss085", {
-                    global_stats: false,
-                    responsive: true,
-                    tooltips: false,
-                    theme: "default",
-                    years: 1,
-                    summary_text: "Contributions in the last year",
-                    language: "en",
-       });
+    //   GitHubCalendar("#github-calendar", "sumitss085", {
+    //                 global_stats: false,
+    //                 responsive: true,
+    //                 tooltips: false,
+    //                 theme: "default",
+    //                 years: 1,
+    //                 summary_text: "Contributions in the last year",
+    //                 language: "en",
+    //    });
 
-       GitHubStats("#github-stats", "sumitss085");
-            GitHubStats("#github-stats", "sumitss085", {
-        show_icons: true,
-        hide_border: true,
-        theme: "radical",
-        custom_title: "My GitHub Stats",
-        include_all_commits: true,
-        count_private: true,
-        });
+    //    GitHubStats("#github-stats", "sumitss085");
+    //         GitHubStats("#github-stats", "sumitss085", {
+    //     show_icons: true,
+    //     hide_border: true,
+    //     theme: "radical",
+    //     custom_title: "My GitHub Stats",
+    //     include_all_commits: true,
+    //     count_private: true,
+    //     });
+
+        // GitHubCalendar(".calendar", "sumitss085");
+
+// // or enable responsive functionality:
+// GitHubCalendar(".calendar", "sumitss085", { responsive: true });
+
+// // Use a proxy
+// GitHubCalendar(".calendar", "sumitss085", {
+//    proxy (sumitss085) {
+//      return fetch(`https://your-proxy.com/github?user=${sumitss085}`)
+//    }
+// }).then(r => r.text())
+GitHubCalendar(".calendar", "sumitss085");
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "sumitss085", { responsive: true });
 
   </script>
  
