@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- <script src="node_modules/github-calendar/dist/github-calendar.min.js"></script> -->
+    <script src="node_modules/github-calendar/dist/github-calendar.min.js"></script>
     <!-- <script src="node_modules/github-readme-stats/dist/github-readme-stats.min.js"></script> -->
     <script
   src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
@@ -213,10 +213,37 @@
                 <div  class="github_record">
                     <h4 class="title">Github Calendar</h4>
                     <div id="github-calendar" ></div>
-                    <div id="github-stats"></div>
-                    <div class="calendar">
-                        
-                    </div>
+                    <section id="github-stats">
+                        <h2>GitHub Stats</h2>
+                        <div class="github-profile">
+                          <img  alt="GitHub Profile Picture" id="profileimg" class="github-profile-picture" widht ="20px">
+                          <div class="github-profile-info">
+                            <h3 class="github-profile-username"></h3>
+                            <p class="github-profile-bio"></p>
+                            <a href="" class="github-profile-link">View Profile</a>
+                          </div>
+                        </div>
+                        <ul class="github-stats-list">
+                          <li>
+                            <span class="github-stats-number"></span>
+                            <span class="github-stats-label">Public Repositories</span>
+                          </li>
+                          <li>
+                            <span class="github-stats-number"></span>
+                            <span class="github-stats-label">Public Gists</span>
+                          </li>
+                          <li>
+                            <span class="github-stats-number"></span>
+                            <span class="github-stats-label">Followers</span>
+                          </li>
+                          <li>
+                            <span class="github-stats-number"></span>
+                            <span class="github-stats-label">Following</span>
+                          </li>
+                        </ul>
+                      </section>
+                      
+                    
 
                 </div>
             </div>
@@ -459,42 +486,63 @@
       })
 
 
-    //   GitHubCalendar("#github-calendar", "sumitss085");
+      GitHubCalendar("#github-calendar", "sumitss085");
 
-    //   GitHubCalendar("#github-calendar", "sumitss085", {
-    //                 global_stats: false,
-    //                 responsive: true,
-    //                 tooltips: false,
-    //                 theme: "default",
-    //                 years: 1,
-    //                 summary_text: "Contributions in the last year",
-    //                 language: "en",
-    //    });
+      GitHubCalendar("#github-calendar", "sumitss085", {
+                    global_stats: false,
+                    responsive: true,
+                    tooltips: false,
+                    theme: "default",
+                    years: 1,
+                    summary_text: "Contributions in the last year",
+                    language: "en",
+       });
 
-    //    GitHubStats("#github-stats", "sumitss085");
-    //         GitHubStats("#github-stats", "sumitss085", {
-    //     show_icons: true,
-    //     hide_border: true,
-    //     theme: "radical",
-    //     custom_title: "My GitHub Stats",
-    //     include_all_commits: true,
-    //     count_private: true,
-    //     });
+       function getGitHubStats() {
+  const username = "sumitss085";
+  const token = "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";
+  const apiUrl = `https://api.github.com/users/${username}`;
 
-        // GitHubCalendar(".calendar", "sumitss085");
+  fetch(apiUrl, {
+    headers: {
+      Authorization: `token ${token}`
+    }
+  }).then(response => response.json())
+    .then(data => {
+        displayGitHubStats(data);
+    })
+    .catch(error => console.error(error));
+}
+getGitHubStats()
 
-// // or enable responsive functionality:
-// GitHubCalendar(".calendar", "sumitss085", { responsive: true });
+function displayGitHubStats(data) {
+   const profilePicture = document.querySelector(".github-profile-picture");
+   const username = document.querySelector(".github-profile-username");
+   const bio = document.querySelector(".github-profile-bio");
+   const profileLink = document.querySelector(".github-profile-link");
+  const publicRepos = document.querySelectorAll(".github-stats-number")[0];
+  const publicGists = document.querySelectorAll(".github-stats-number")[1];
+  const followers = document.querySelectorAll(".github-stats-number")[2];
+  const following = document.querySelectorAll(".github-stats-number")[3];
 
-// // Use a proxy
-// GitHubCalendar(".calendar", "sumitss085", {
-//    proxy (sumitss085) {
-//      return fetch(`https://your-proxy.com/github?user=${sumitss085}`)
-//    }
-// }).then(r => r.text())
-GitHubCalendar(".calendar", "sumitss085");
-    // or enable responsive functionality
-    GitHubCalendar(".calendar", "sumitss085", { responsive: true });
+  profilePicture.src = data.avatar_url;
+  username.textContent = data.login;
+  bio.textContent = data.bio;
+  profileLink.href = data.html_url;
+  publicRepos.textContent = data.public_repos;
+  publicGists.textContent = data.public_gists;
+  followers.textContent = data.followers;
+  following.textContent = data.following;
+}
+
+getGitHubStats();
+
+
+
+    
+        
+
+
 
   </script>
  

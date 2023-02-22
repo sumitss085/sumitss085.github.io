@@ -1343,6 +1343,86 @@ footer .wave#wave4
 .pro_tect_stack div>p{
     font-size: 10px;
 }
+.github-profile-bio {
+   display: none;
+  }
 
 }
+
+
+
+#github-stats {
+    margin: 2rem 0;
+  }
+  
+  #github-stats h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .github-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  #profileimg {
+     width: 200px;
+  }
+  
+  .github-profile-info {
+    flex: 1;
+  }
+  
+  .github-profile-username {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .github-profile-bio {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .github-profile-link {
+    display: inline-block;
+    font-size: 1rem;
+    background-color: #24292e;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+  }
+  
+  .github-profile-link:hover {
+    background-color: #0366d6;
+  }
+  
+  .github-stats-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .github-stats-list li {
+    flex: 1;
+    margin: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 0.25rem;
+  }
+  
+  .github-stats-number {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .github-stats-label {
+    font-size: 1rem;
+  }
+  
 
