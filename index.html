@@ -37,7 +37,7 @@
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#teams" class="menu-btn">Project</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
-                <li><a href="#services" class="menu-btn" download="sumit_ss-resume.pdf">Resume</a></li>
+                <li><a href="/Resources/Sumit_shastrakar-Resume.pdf" class="menu-btn" download>Resume</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -54,8 +54,9 @@
                 <div class="text-2">Sumit Shastrakar</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
                 <div class="text-4"> I am an enterprise level web application developer with the experties in framework / programming langauges React + Node.js + Next.js + Chakara UI </div>
-                <div class="classbox"><a href="Resources/sumit_ss-resume.pdf" download="sumit_ss-resume.pdf">Resume</a></div>
+                <div class="classbox"><a href="./Resources/Sumit_shastrakar-Resume.pdf"   download onclick="redirect()" target="_blank">Resume</a></div>
             </div>
+            <!-- "https://drive.google.com/file/d/1RvEK2gI3lJsx563DWLSwZGm4cIcUEhmn/view?usp=share_link" -->
             <div class="Home_media_box">
                 <ul id="Home_media">
                     <!-- linkedin  -->
@@ -91,7 +92,7 @@
                 <div class="column right">
                     <div class="text">I'm Sumit Shastrakarand I'm a <span class="typing-2"></span></div>
                     <p> Aspiring full Stack MERN Developer. I love to make projects which are helpful for masses and serve as a great helpful entity.  </p>
-                    <a href="https://drive.google.com/file/d/1i6ZFz_phn8VofKzIw7uWjPOPU0Nz-3vi/view?usp=share_link" >See my Resume</a>
+                    <a href="https://drive.google.com/file/d/1RvEK2gI3lJsx563DWLSwZGm4cIcUEhmn/view?usp=share_link" target="_blank">See my Resume</a>
                     
                 </div>
             </div>
@@ -203,9 +204,32 @@
                         <img src="https://pbs.twimg.com/profile_images/1244925541448286208/rzylUjaf_400x400.jpg" alt="">
                         <p>Chakra UI</p>
                     </div>
+                    
+
+
+                </div>
+
+                <div class="techstackheading">
+                <h4 class="title">------Tools------</h4>
+               </div>
+                
+                <div class="tech-stack">
+                  
+                   
+                 
                     <div>
                         <img src="https://chiranjeev-thapliyal.vercel.app/svg/git.svg" alt="">
                         <p>Git</p>
+                    </div>
+
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="">
+                        <p>VS Code</p>
+                    </div>
+
+                     <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDl5JhJZj9-ftvie141ZiXcW0az-zezik0Q&usqp=CAU" alt="">
+                        <p>Node Package Manager </p>
                     </div>
 
 
@@ -399,7 +423,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column right">
+                <!-- <div class="column right">
                     <div class="text">Message me</div>
                     <form action="#" name="contact" method="POST" data-netlify="true">
                         <div class="fields">
@@ -420,7 +444,7 @@
                             <button type="submit">Send message</button>
                         </div>
                     </form>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -516,6 +540,7 @@
 getGitHubStats()
 
 function displayGitHubStats(data) {
+    console.log(data)
    const profilePicture = document.querySelector(".github-profile-picture");
    const username = document.querySelector(".github-profile-username");
    const bio = document.querySelector(".github-profile-bio");
@@ -535,11 +560,15 @@ function displayGitHubStats(data) {
   following.textContent = data.following;
 }
 
-getGitHubStats();
 
 
 
-    
+
+function redirect(){
+   
+         window.location.href="https://drive.google.com/file/d/1RvEK2gI3lJsx563DWLSwZGm4cIcUEhmn/view?usp=share_link";
+ 
+}
         
 
 

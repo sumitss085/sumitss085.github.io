@@ -135,7 +135,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,90,121,1) 0%, rgba(
 
 /* menu btn styling */
 .menu-btn{
-    color: #fff;
+    color: black;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -1231,7 +1231,7 @@ footer .wave#wave4
 
 @media (max-width: 500px) {
     .navbar .logo a{
-        color: #fff;
+        color: black;
         font-size: 25px;
         font-weight: 400;
         cursor: pointer;
