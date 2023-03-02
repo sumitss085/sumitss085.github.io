@@ -37,7 +37,8 @@
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#teams" class="menu-btn">Project</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
-                <li><a href="/Resources/Sumit_shastrakar-Resume.pdf" class="menu-btn" download>Resume</a></li>
+                <li><a href="/Resources/Sumit_shastrakar-Resume.pdf" class="menu-btn" download onclick="redirect()">Resume</a></li>
+               
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -54,7 +55,7 @@
                 <div class="text-2">Sumit Shastrakar</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
                 <div class="text-4"> I am an enterprise level web application developer with the experties in framework / programming langauges React + Node.js + Next.js + Chakara UI </div>
-                <div class="classbox"><a href="./Resources/Sumit_shastrakar-Resume.pdf"   download onclick="redirect()" target="_blank">Resume</a></div>
+                <div class="classbox"><a href="./Resources/Sumit_shastrakar-Resume.pdf"   download onclick="redirect()" >Resume</a></div>
             </div>
             <!-- "https://drive.google.com/file/d/1RvEK2gI3lJsx563DWLSwZGm4cIcUEhmn/view?usp=share_link" -->
             <div class="Home_media_box">
@@ -289,8 +290,7 @@
                         </div>
                         <div class="pro_desp">
                             <div class="text">Wake Healthy</div>
-                        <p class="desp">A fitness movement that is worth
-                            breakign a sweat for </p>
+                        <p class="desp">A Platform for virtual training programs available for your special workouts starting from beginner level to Pro. Also different offline Gym centers available with great pricing to join . </p>
                         </div>
                         <div class="pro_button">
                             <a href="https://wakehealthy.netlify.app/" class="project" target="_blank">View Project</a>
@@ -354,7 +354,7 @@
                         </div>
                         <div class="pro_desp">
                             <div class="text">Weeso</div>
-                        <p class="desp">Weesho is an online Shopping & Reselling site in India - Buy & Sell best quality Fashion, Electronics, Home & Kitchen products at lowest prices. </p>
+                        <p class="desp">Weesho is India's largest and most trusted marketplace for Resellers,  Hit products at Lowest prices. Best Quality with Easy Return policy </p>
                         </div>
                         <div class="pro_button">
                             <a href="https://fasion-hub-store.vercel.app/" class="project" target="_blank">View Project</a>
@@ -565,10 +565,12 @@ function displayGitHubStats(data) {
 
 
 function redirect(){
-   
-         window.location.href="https://drive.google.com/file/d/1RvEK2gI3lJsx563DWLSwZGm4cIcUEhmn/view?usp=share_link";
+    const googleDriveUrl = 'https://drive.google.com/file/d/1RvEK2gI3lJsx563DWLSwZGm4cIcUEhmn/view?usp=share_link';
+    window.open(googleDriveUrl, '_blank');
  
 }
+
+
         
 
 
