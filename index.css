@@ -463,6 +463,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,90,121,1) 0%, rgba(
     border-radius: 10px
     ;
 }
+.GitShivam_Stat {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
 
 
 .techstackheading .title::after{
@@ -509,6 +514,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,90,121,1) 0%, rgba(
      margin: auto;
      text-align: center;
      padding: 20px 10px;
+}
+.secondcontainer{
+    margin-top: 20px;
 }
 .pro_img img{
     height: 150px;
@@ -957,6 +965,9 @@ footer .wave#wave4
     height: 140px;
  
    }
+   .secondcontainer{
+    margin-top: 20px;
+}
    .pro_button{
     display: flex;
     justify-content: space-around;
@@ -1030,7 +1041,7 @@ footer .wave#wave4
         padding: 10px 30px;
     }
     .home_image img{
-        width: 280px;
+        width: 400px;
         height: 350px;
       }
     .max-width{
@@ -1104,6 +1115,9 @@ footer .wave#wave4
     border: 2px solid #72A0C1;
     transition: 0.3s ease-in-out;
 }
+.secondcontainer{
+    margin-top: 20px;
+}
 }
 
 @media (max-width: 690px) {
@@ -1176,7 +1190,9 @@ footer .wave#wave4
        padding: 20px 10px;
   }
   
- 
+  .secondcontainer{
+    margin-top: 20px;
+}
  
   .pro_desp .desp{
       height: 130px;
@@ -1223,7 +1239,15 @@ footer .wave#wave4
   .pro_tect_stack div>p{
       font-size: 14px;
   }
-  
+  section .title{
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
     
 
 
@@ -1235,6 +1259,9 @@ footer .wave#wave4
         font-size: 25px;
         font-weight: 400;
         cursor: pointer;
+    }
+    .secondcontainer{
+        margin-top: 20px;
     }
     .classbox{
         height: 50px;
@@ -1351,9 +1378,7 @@ footer .wave#wave4
 
 
 
-#github-stats {
-    margin: 2rem 0;
-  }
+
   
   #github-stats h2 {
     font-size: 1.5rem;
