@@ -68,6 +68,7 @@ section .title::before{
     height: 3px;
     background: #111;
     transform: translateX(-50%);
+    
 }
 section .title::after{
     position: absolute;
@@ -78,6 +79,7 @@ section .title::after{
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
+    border: 2px solid red;
 }
 
 /* navbar styling */
@@ -100,7 +102,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,90,121,1) 0%, rgba(
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #000;
+    color: black;
     font-size: 35px;
     font-weight: 600;
     cursor: pointer;
@@ -213,7 +215,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,90,121,1) 0%, rgba(
 }
 .home_image img{
   width: 300px;
-  height: 450px;
+  height: 350px;
 }
 .classbox
 {
@@ -462,6 +464,10 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,90,121,1) 0%, rgba(
     padding: 5px;
     border-radius: 10px
     ;
+}
+.toolhead{
+    width: 400px;
+    
 }
 .GitShivam_Stat {
     display: flex;
@@ -1257,7 +1263,7 @@ footer .wave#wave4
     .navbar .logo a{
         color: black;
         font-size: 25px;
-        font-weight: 400;
+        font-weight: 700;
         cursor: pointer;
     }
     .secondcontainer{
@@ -1373,6 +1379,18 @@ footer .wave#wave4
 .github-profile-bio {
    display: none;
   }
+
+  section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 15px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+    border: 2px solid red;
+}
 
 }
 
